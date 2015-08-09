@@ -1,0 +1,19 @@
+[user]
+    name = Sam Willcocks
+    email = sam@wlcx.cc
+[core]
+	editor = vim
+    pager = "less -r"
+[alias]
+    ci = commit
+    cim = commit -m
+    co = checkout
+    st = status -bs
+    d = diff
+    dc = diff --cached
+    a = add
+    ap = add -p
+[push]
+    default = matching
+[color]
+    ui = auto
