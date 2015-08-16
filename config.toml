@@ -1,6 +1,6 @@
 [tasks.default]
     links = [
-        [".tmuxrc"],
+        [".tmux.conf"],
         [".gitconfig"],
     ]
 
