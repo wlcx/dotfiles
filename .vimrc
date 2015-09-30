@@ -25,6 +25,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'bendavis78/vim-polymer'
 Plug 'altercation/vim-colors-solarized'
+Plug 'sickill/vim-monokai'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'floobits/floobits-neovim'
 Plug 'tpope/vim-surround'
@@ -36,7 +37,7 @@ Plug 'groenewege/vim-less'
 call plug#end()
 
 map <C-n> :NERDTreeToggle<CR>
-colorscheme solarized
+colorscheme monokai
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
