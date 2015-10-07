@@ -19,3 +19,9 @@
     default = matching
 [color]
     ui = auto
+
+# Useful when tunneling through ssh
+#[http]
+#    proxy = socks5://localhost:1234
+#[https]
+#    proxy = socks5://localhost:1234
