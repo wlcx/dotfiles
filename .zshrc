@@ -8,6 +8,7 @@ if [[ -s "/usr/local/etc/profile.d/z.sh" ]]; then
 fi
 
 export EDITOR=vim
+export SUDO_EDITOR=vim
 
 # Keep this last in case we want to override anything
 if [[ -s "$HOME/.zshrc.local" ]]; then
