@@ -47,3 +47,10 @@ set wildignore+=*/app/storage/*
 set wildignore+=*/vendor/*
 set wildignore+=*/node_modules/*
 let g:syntastic_php_phpcs_args='--standard=psr2'
+
+let g:go_fmt_command = "goimports"
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
