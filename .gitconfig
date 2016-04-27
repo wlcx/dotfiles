@@ -1,10 +1,12 @@
 [user]
     name = Sam Willcocks
     email = sam@wlcx.cc
+    signingkey = 85D3F2C8
 [core]
 	editor = vim
     pager = "less -r"
 [alias]
+    log = log --show-signatures
     ci = commit
     cim = commit -m
     cia = commit --amend
@@ -25,3 +27,5 @@
 #    proxy = socks5://localhost:1234
 #[https]
 #    proxy = socks5://localhost:1234
+[commit]
+    gpgsign = true
