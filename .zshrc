@@ -17,3 +17,4 @@ fi
 
 # Aliases
 alias sshconf="$EDITOR $HOME/.ssh/config"
+alias gitconf="$EDITOR $HOME/.gitconfig"

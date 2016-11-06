@@ -26,7 +26,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'altercation/vim-colors-solarized'
 Plug 'sickill/vim-monokai'
 Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'floobits/floobits-neovim'
 Plug 'tpope/vim-surround'
 Plug 'xsbeats/vim-blade'
 Plug 'stephpy/vim-php-cs-fixer'
@@ -46,10 +45,12 @@ set wildignore+=*/app/storage/*
 set wildignore+=*/vendor/*
 set wildignore+=*/node_modules/*
 let g:syntastic_php_phpcs_args='--standard=psr2'
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck', 'go']
 
 let g:go_fmt_command = "goimports"
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gc <Plug>(go-doc)
+au FileType go nmap <Leader>gd <Plug>(go-def)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
