@@ -35,7 +35,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'osx' \
   'git' \
-  'python'
+  'python' \
+  'syntax-highlighting'
 
 #
 # Editor
@@ -113,12 +114,12 @@ zstyle ':prezto:module:prompt' theme 'giddie'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'cursor' \
+  'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
