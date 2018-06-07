@@ -7,6 +7,8 @@ if [[ -s "/usr/local/etc/profile.d/z.sh" ]]; then
   source "/usr/local/etc/profile.d/z.sh"
 fi
 
+$HOME/.dotfiles/check-status.sh
+
 export EDITOR=vim
 export SUDO_EDITOR=vim
 
