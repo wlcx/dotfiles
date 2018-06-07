@@ -45,3 +45,7 @@
         ["chmod", "0600", "${HM_DEST}/.ssh/authorized_keys"],
     ]
 
+[tasks.golang]
+    links = [
+        ".zshrc.golang"
+    ]

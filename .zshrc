@@ -12,6 +12,11 @@ $HOME/.dotfiles/check-status.sh
 export EDITOR=vim
 export SUDO_EDITOR=vim
 
+
+if [[ -s "$HOME/.zshrc.golang" ]]; then
+  source "$HOME/.zshrc.golang"
+fi
+
 # Keep this last in case we want to override anything
 if [[ -s "$HOME/.zshrc.local" ]]; then
   source "$HOME/.zshrc.local"
