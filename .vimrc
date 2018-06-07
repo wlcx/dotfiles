@@ -31,6 +31,9 @@ Plug 'xsbeats/vim-blade'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'Tpope/vim-obsession'
 Plug 'groenewege/vim-less'
+Plug 'jaxbot/browserlink.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
