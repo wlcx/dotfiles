@@ -4,5 +4,5 @@
 # Best used at login.
 
 if ! git -C $HOME/.dotfiles diff --quiet --ignore-submodules HEAD ; then
-    echo "\033[1;31mOI! Commit your dotfiles!\033[0m"
+    echo "`tput setaf 1`OI! Commit your dotfiles!`tput sgr0`"
 fi

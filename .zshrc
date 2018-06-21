@@ -1,3 +1,5 @@
+# Welcome to samw's zshrc. Enjoy your stay.
+#
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
