@@ -11,6 +11,23 @@ set autoindent    " align the new line indent with the previous line
 set backspace=indent,eol,start
 set background=dark
 set nu
+set relativenumber
+
+" I wonder how long it'll take me to regret this!!
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+inoremap jj <Esc>
+inoremap ff <Esc>:update<Cr>
 
 call plug#begin()
 
@@ -48,10 +65,13 @@ set wildignore+=*/app/storage/*
 set wildignore+=*/vendor/*
 set wildignore+=*/node_modules/*
 let g:syntastic_php_phpcs_args='--standard=psr2'
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck', 'go']
+let g:syntastic_go_checkers = ['gometalinter']
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 0
 
 let g:go_fmt_command = "goimports"
 au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>re <Plug>(go-rename)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <Leader>gc <Plug>(go-doc)
