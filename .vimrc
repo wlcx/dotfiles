@@ -51,6 +51,9 @@ Plug 'groenewege/vim-less'
 Plug 'jaxbot/browserlink.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'SirVer/ultisnips'
+Plug 'rust-lang/rust.vim'
+Plug 'neomake/neomake'
 
 call plug#end()
 
@@ -64,12 +67,12 @@ let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/app/storage/*
 set wildignore+=*/vendor/*
 set wildignore+=*/node_modules/*
-let g:syntastic_php_phpcs_args='--standard=psr2'
-let g:syntastic_go_checkers = ['gometalinter']
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave = 0
 
 let g:go_fmt_command = "goimports"
+let g:rustfmt_autosave = 1
+
+call neomake#configure#automake('nrwi', 500)
+
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>re <Plug>(go-rename)
 au FileType go nmap <leader>b <Plug>(go-build)
@@ -77,3 +80,7 @@ au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <Leader>gc <Plug>(go-doc)
 au FileType go nmap <Leader>gd <Plug>(go-def)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+
+au FileType rust nmap <Leader>r <Plug>(RustRun)
+
+let g:UltiSnipsExpandTrigger="<tab>"
