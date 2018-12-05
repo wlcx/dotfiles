@@ -1,6 +1,3 @@
-[include]
-    path = ~/.gitconfig.local
-
 [user]
     name = Sam Willcocks
     email = sam@wlcx.cc
@@ -23,6 +20,9 @@
     default = matching
 [color]
     ui = auto
+[include]
+    path = ~/.gitconfig.local
+
 
 # Useful when tunneling through ssh
 #[http]
