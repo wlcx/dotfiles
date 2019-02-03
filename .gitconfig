@@ -29,3 +29,9 @@
 #    proxy = socks5://localhost:1234
 #[https]
 #    proxy = socks5://localhost:1234
+[interactive]
+	diffFilter = diff-highlight
+[pager]
+	diff = diff-highlight | less
+	log = diff-highlight | less
+	show = diff-highlight | less
