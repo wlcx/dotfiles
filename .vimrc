@@ -26,9 +26,6 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-inoremap jj <Esc>
-inoremap ff <Esc>:update<Cr>
-
 call plug#begin()
 
 Plug 'scrooloose/syntastic'
