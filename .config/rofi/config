@@ -1,0 +1,6 @@
+rofi.theme: Monokai
+
+rofi.modi: combi
+rofi.show: combi
+rofi.combi-modi: window,drun,run 
+rofi.show-icons: true
