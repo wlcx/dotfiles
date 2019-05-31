@@ -22,6 +22,8 @@
     ui = auto
 [include]
     path = ~/.gitconfig.local
+[branch]
+    sort = -committerdate
 
 
 # Useful when tunneling through ssh
