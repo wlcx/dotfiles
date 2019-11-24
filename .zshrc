@@ -25,8 +25,11 @@ if [[ -s "$HOME/.zshrc.local" ]]; then
 fi
 
 # Aliases
+alias g=git
 alias sshconf="$EDITOR $HOME/.ssh/config"
 alias gitconf="$EDITOR $HOME/.gitconfig"
 alias vimconf="$EDITOR $HOME/.vimrc"
 alias nvimconf="$EDITOR $HOME/.config/nvim/init.vim"
 alias zshconf="$EDITOR $HOME/.zshrc"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
