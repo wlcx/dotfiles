@@ -42,7 +42,6 @@ Plug 'sickill/vim-monokai'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'tpope/vim-surround'
 Plug 'xsbeats/vim-blade'
-Plug 'stephpy/vim-php-cs-fixer'
 Plug 'Tpope/vim-obsession'
 Plug 'groenewege/vim-less'
 Plug 'jaxbot/browserlink.vim'
@@ -51,6 +50,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'SirVer/ultisnips'
 Plug 'rust-lang/rust.vim'
 Plug 'neomake/neomake'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -81,3 +81,7 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType rust nmap <Leader>r <Plug>(RustRun)
 
 let g:UltiSnipsExpandTrigger="<tab>"
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
