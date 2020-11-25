@@ -14,6 +14,8 @@ $HOME/.dotfiles/check-status.sh
 export EDITOR=vim
 export SUDO_EDITOR=vim
 
+export PATH=$HOME/.local/bin:$PATH
+
 
 if [[ -s "$HOME/.zshrc.golang" ]]; then
   source "$HOME/.zshrc.golang"
