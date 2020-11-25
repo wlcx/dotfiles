@@ -34,4 +34,4 @@ alias vimconf="$EDITOR $HOME/.vimrc"
 alias nvimconf="$EDITOR $HOME/.config/nvim/init.vim"
 alias zshconf="$EDITOR $HOME/.zshrc"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh || true
