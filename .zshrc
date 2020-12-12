@@ -11,12 +11,6 @@ fi
 
 $HOME/.dotfiles/check-status.sh
 
-export EDITOR=vim
-export SUDO_EDITOR=vim
-
-export PATH=$HOME/.local/bin:$PATH
-
-
 if [[ -s "$HOME/.zshrc.golang" ]]; then
   source "$HOME/.zshrc.golang"
 fi
@@ -28,6 +22,13 @@ fi
 
 # Aliases
 alias g=git
+
+# Conditional aliases
+if command -v bat &> /dev/null; then
+    alias cat=bat
+fi
+
+# Conf aliases
 alias sshconf="$EDITOR $HOME/.ssh/config"
 alias gitconf="$EDITOR $HOME/.gitconfig"
 alias vimconf="$EDITOR $HOME/.vimrc"
