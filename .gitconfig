@@ -3,19 +3,21 @@
     email = sam@wlcx.cc
 [core]
 	editor = vim
-    pager = "less -r"
+    pager = "diffr | less -R"
 [alias]
-    log = log --show-signatures
-    ci = commit
-    cim = commit -m
-    cia = commit --amend
-    co = checkout
-    st = status -bs
-    d = diff
-    dc = diff --cached
     a = add
     ap = add -p
+    ci = commit
+    cia = commit --amend
+    cim = commit -m
+    co = checkout
+    d = diff
+    dc = diff --cached
     fp = fetch -p
+    log = log --show-signatures
+    r = rebase --autostash
+    ri = rebase -i --autostash
+    st = status -bs
 [push]
     default = matching
 [color]
@@ -24,16 +26,6 @@
     path = ~/.gitconfig.local
 [branch]
     sort = -committerdate
-
-
-# Useful when tunneling through ssh
-#[http]
-#    proxy = socks5://localhost:1234
-#[https]
-#    proxy = socks5://localhost:1234
 [interactive]
-	diffFilter = diff-highlight
-[pager]
-	diff = diff-highlight | less
-	log = diff-highlight | less
-	show = diff-highlight | less
+	diffFilter = diffr  # fails gracefully with an error
+
