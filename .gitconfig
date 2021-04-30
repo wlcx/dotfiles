@@ -19,7 +19,7 @@
     ri = rebase -i --autostash
     st = status -bs
 [push]
-    default = matching
+    default = current
 [color]
     ui = auto
 [include]
@@ -29,3 +29,5 @@
 [interactive]
 	diffFilter = diffr  # fails gracefully with an error
 
+[init]
+	defaultBranch = main
