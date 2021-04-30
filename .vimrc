@@ -48,6 +48,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'neomake/neomake'
 Plug 'mileszs/ack.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
